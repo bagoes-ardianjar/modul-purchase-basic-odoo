@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="pembelian_action_id" model="ir.action.act_window">
+        <field name="name">Pembelian</field>
+        <field name="res_model">autodidak.pembelian</field>
+    </record>
+    <record id="pembelian_action_tree_view_id" model="ir.action.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" reff="autodidak_pembelian.autodidak_pembelian_tree_view_id"/>
+        <field name="act_window_id" ref="autodidak_pembelian.pembelian_action_id"/>
+    </record>
+
+    <record id="pembelian_action_kanban_view_id" model="ir.action.act_window.view">
+        <field name="sequence" eval="2"/>
+        <field name="view_mode">kanban</field>
+        <field name="view_id" reff="autodidak_pembelian.autodidak_pembelian_kanban_view_id"/>
+        <field name="act_window_id" ref="autodidak_pembelian.pembelian_action_id"/>
+    </record>
+
+    <record id="pembelian_action_form_view_id" model="ir.action.act_window.view">
+        <field name="sequence" eval="4"/>
+        <field name="view_mode">form</field>
+        <field name="view_id" reff="autodidak_pembelian.autodidak_pembelian_form_view_id"/>
+        <field name="act_window_id" ref="autodidak_pembelian.pembelian_action_id"/>
+    </record>
+
+    <record id="brand_action_id" model="ir.action.act_window">
+        <field name="name">Brand</field>
+        <field name="res_model">autodidak.brand</field>
+    </record>
+
+    <record id="brand_action_tree_view_id" model="ir.action.act_window.view">
+        <field name="sequence" eval="1"/>
+        <field name="view_mode">tree</field>
+        <field name="view_id" reff="autodidak_pembelian.autodidak_brand_tree_view_id"/>
+        <field name="act_window_id" ref="autodidak_pembelian.brand_action_id"/>
+    </record>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem
+        id="parent_autodidak_pembelian_id"
+        name="Pembelian"
+        sequence="5"/>
+        <menuitem
+            id="child_autodidak_pembelian_id"
+            name="Pembelian"
+            sequence="1"
+            parent="autodidak_pembelian.parent_autodidak_pembelian_id"
+            action="autodidak_pembelian.pembelian_action_id"/>
+        <menuitem
+            id="child_autodidak_brand_id"
+            name="Brand"
+            sequence="2"
+            parent="autodidak_pembelian.parent_autodidak_pembelian_id"
+            action="autodidak_pembelian.brand_action_id"/>
+</odoo>
